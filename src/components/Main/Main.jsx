@@ -15,7 +15,7 @@ const Main = () => {
     // Update the URL whenever the balance changes
     useEffect(() => {
         // Construct the URL with the balance as a query parameter
-        const url = new URL('https://ai-wallet-investment.onrender.com/');
+        const url = new URL('https://ai-wallet-recommendation.onrender.com/');
         url.searchParams.append('balance', balance.toString());
         setExternalSiteUrl(url.toString());
     }, [balance]);
